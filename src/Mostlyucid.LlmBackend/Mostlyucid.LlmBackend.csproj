@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Mostlyucid.LlmBackend</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Scott Galloway</Authors>
+    <Company>Mostlylucid</Company>
+    <Product>LLM Backend Library</Product>
+    <Description>A robust abstraction library for multiple LLM backends with built-in failover, round-robin, and retry logic. Supports OpenAI, Azure OpenAI, Ollama, LM Studio, and EasyNMT. Can be used in any .NET application requiring LLM integration with high availability.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/scottgal/mostlylucid.resxtranslator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/scottgal/mostlylucid.resxtranslator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>llm;openai;ollama;azure;backend;failover;round-robin;easynmt;ai;ml</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Polly" Version="8.4.2" />
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\docs\LlmBackend-README.md" Pack="true" PackagePath="\README.md" />
+  </ItemGroup>
+
+</Project>
