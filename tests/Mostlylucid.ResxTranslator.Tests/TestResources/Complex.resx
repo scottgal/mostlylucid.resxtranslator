@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Simple greeting -->
+  <data name="Greeting" xml:space="preserve">
+    <value>Hello, World!</value>
+    <comment>Standard greeting message shown on the home page</comment>
+  </data>
+
+  <!-- Format strings with placeholders -->
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Welcome, {0}! You have {1} new messages.</value>
+    <comment>Welcome message with user name and message count. {0} is the username, {1} is the count</comment>
+  </data>
+
+  <data name="DateTimeFormat" xml:space="preserve">
+    <value>Last login: {0:yyyy-MM-dd HH:mm:ss}</value>
+    <comment>Date/time format string for last login display</comment>
+  </data>
+
+  <!-- Special characters and Unicode -->
+  <data name="UnicodeText" xml:space="preserve">
+    <value>Émojis: 😀 🎉 🚀 | Symbols: © ® ™ | Chinese: 你好世界 | Arabic: مرحبا بالعالم</value>
+    <comment>Text containing various Unicode characters including emojis and international text</comment>
+  </data>
+
+  <!-- Multi-line text -->
+  <data name="MultiLineText" xml:space="preserve">
+    <value>This is line 1.
+This is line 2.
+This is line 3.</value>
+    <comment>Multi-line text with line breaks</comment>
+  </data>
+
+  <!-- HTML content -->
+  <data name="HtmlContent" xml:space="preserve">
+    <value>&lt;div class="alert"&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Please &lt;a href="{0}"&gt;click here&lt;/a&gt; to continue.&lt;/div&gt;</value>
+    <comment>HTML formatted alert message. {0} is the URL</comment>
+  </data>
+
+  <!-- JSON string -->
+  <data name="JsonConfig" xml:space="preserve">
+    <value>{"name": "{0}", "version": "{1}", "enabled": true}</value>
+    <comment>JSON configuration template. {0} is name, {1} is version</comment>
+  </data>
+
+  <!-- SQL query -->
+  <data name="SqlQuery" xml:space="preserve">
+    <value>SELECT * FROM Users WHERE Name = '{0}' AND Age > {1}</value>
+    <comment>SQL query template. Do not translate SQL keywords</comment>
+  </data>
+
+  <!-- Regex pattern -->
+  <data name="EmailPattern" xml:space="preserve">
+    <value>^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$</value>
+    <comment>Regular expression for email validation. Do not translate</comment>
+  </data>
+
+  <!-- Format specifiers -->
+  <data name="PriceFormat" xml:space="preserve">
+    <value>Price: ${0:F2} | Discount: {1}%</value>
+    <comment>Price display format. {0:F2} formats as decimal with 2 places</comment>
+  </data>
+
+  <!-- Very long text -->
+  <data name="LongDescription" xml:space="preserve">
+    <value>This is a very long description that contains multiple sentences and should test the translation service's ability to handle large blocks of text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</value>
+    <comment>Long product description for testing purposes</comment>
+  </data>
+
+  <!-- String interpolation -->
+  <data name="StringInterpolation" xml:space="preserve">
+    <value>User {{name}} logged in at {{time}}</value>
+    <comment>Log message with double-brace interpolation syntax</comment>
+  </data>
+
+  <!-- Path and file names -->
+  <data name="FilePath" xml:space="preserve">
+    <value>C:\Users\{0}\Documents\{1}.txt</value>
+    <comment>File path template. Keep backslashes and structure</comment>
+  </data>
+
+  <!-- Empty value test -->
+  <data name="EmptyValue" xml:space="preserve">
+    <value></value>
+    <comment>Intentionally empty value for testing</comment>
+  </data>
+
+  <!-- Special escape sequences -->
+  <data name="EscapeSequences" xml:space="preserve">
+    <value>Tab:\t Newline:\n Quote:\" Backslash:\\</value>
+    <comment>Text with escape sequences that must be preserved</comment>
+  </data>
+
+  <!-- Mixed language content -->
+  <data name="MixedLanguage" xml:space="preserve">
+    <value>Welcome to our service! Bienvenue! Willkommen! 欢迎! مرحبا!</value>
+    <comment>Multi-language welcome message</comment>
+  </data>
+
+  <!-- Technical terms -->
+  <data name="TechnicalTerms" xml:space="preserve">
+    <value>Initialize the WebSocket connection using SSL/TLS on port {0}</value>
+    <comment>Technical instruction. Keep technical terms like WebSocket, SSL, TLS unchanged</comment>
+  </data>
+
+  <!-- Abbreviations and acronyms -->
+  <data name="Abbreviations" xml:space="preserve">
+    <value>API endpoint: {0} | Status: OK | ETA: {1} mins</value>
+    <comment>System status message with abbreviations</comment>
+  </data>
+</root>
